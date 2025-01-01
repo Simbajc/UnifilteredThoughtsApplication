@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="LoginController" prefHeight="400.0" prefWidth="600.0" spacing="10">
+    <Label fx:id="loginTitile" text="Unfiltered Thoughts" alignment="TOP_CENTER"/>
+    <!-- Spacer to Push Content to the Center -->
+    <VBox alignment="CENTER" VBox.vgrow="ALWAYS" spacing="10">
+        <StackPane alignment="CENTER">
+            <VBox>
+                <HBox fx:id="loginBox" alignment="CENTER" spacing="10">
+                    <VBox fx:id="labelsLogin" alignment="CENTER" spacing="10">
+                        <Label fx:id="usernameLabel" text="Username" />
+                        <Label fx:id="passwordLabel" text="Password" />
+                    </VBox>
+                    <VBox fx:id="textboxLogin" alignment="CENTER_LEFT" spacing="10">
+                        <TextField fx:id="usernameTextField" />
+                        <TextField fx:id="passwordTextField" />
+                    </VBox>
+                </HBox>
+            </VBox>
+        </StackPane>
+        <VBox alignment="CENTER" spacing="10">
+            <Button fx:id="loginButton" text="Login" alignment="CENTER" onAction="#login"/>
+            <Button fx:id="createAccountButton" text="Create Account" alignment="CENTER" onAction="#createAccount"/>
+        </VBox>
+
+    </VBox>
+
+
+
+
+
+
+
+</VBox>

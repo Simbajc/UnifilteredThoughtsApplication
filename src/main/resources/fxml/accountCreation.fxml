@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="AccountCreationController"
+            prefHeight="400.0" prefWidth="600.0" alignment="CENTER" spacing="20">
+    <Label fx:id="accountSettingTitle" text="Account Creation"/>
+    <VBox fx:id="usernameBox" alignment="CENTER">
+        <Label fx:id="usernameTitle" text="Username" alignment="CENTER_LEFT"/>
+        <TextField fx:id="usernameTextField" maxWidth="150"/>
+    </VBox>
+    <VBox fx:id="newPassBox" alignment="CENTER">
+        <Label fx:id="newPassTitle" text="New Password"/>
+        <TextField fx:id="newPassTextField" maxWidth="150"/>
+    </VBox>
+    <VBox fx:id="repeatNewPassBox" alignment="CENTER">
+        <Label fx:id="repeatNewPassTitle" text="Repeat Password"/>
+        <TextField fx:id="repeatNewPassTextField" maxWidth="150"/>
+    </VBox>
+    <Button fx:id="createAccountButton" text="Create Account" onAction="#createAccount"/>
+    <Button fx:id="backButton" text="Go Back" alignment="BOTTOM_LEFT" onAction="#backToLogin"/>
+
+
+</VBox>

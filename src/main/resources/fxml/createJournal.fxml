@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox fx:id="root" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="CreateJournalController"
+      prefHeight="400.0" prefWidth="600.0" >
+    <VBox fx:id="journalListBox" alignment="TOP_CENTER" VBox.vgrow="ALWAYS" spacing="15">
+        <VBox alignment="CENTER">
+            <Label fx:id="unfilteredThoughtsTitle" text="Unfiltered Thought"/>
+            <ListView fx:id="journalEntryList" onMouseClicked="#viewJournalEntry" />
+        </VBox>
+        <StackPane fx:id="setting">
+            <VBox fx:id="createJournalBox" spacing="50" alignment="CENTER" VBox.vgrow="ALWAYS">
+                <VBox fx:id="journalStatsBox" alignment="TOP_CENTER" spacing="20">
+                    <VBox fx:id="entryNumBox" alignment="CENTER">
+                        <Label fx:id="entryNumTitle" text="Number of Entries"/>
+                        <Label fx:id="entryNum" text="0"/>
+                    </VBox>
+                    <VBox fx:id="loginStreakBox" alignment="CENTER">
+                        <Label fx:id="loginStreakTitle" text="Login Streak"/>
+                        <Label fx:id="loginStreakNum" text="0"/>
+                    </VBox>
+                </VBox>
+                <Button fx:id="accountSettingButton" text="Account Setting" onAction="#goToAccountSettings"/>
+            </VBox>
+        </StackPane>
+    </VBox>
+
+    <StackPane fx:id="createBox" HBox.hgrow="ALWAYS" >
+        <VBox alignment="TOP_CENTER" spacing="150">
+            <VBox spacing="150" alignment="CENTER">
+                <Label fx:id="logo" text="Unifiltered Thoughts"/>
+                <Label fx:id="currentDate" text="Date: "/>
+            </VBox>
+            <Button fx:id="createEntryButton" text="Create Entry" onAction="#createJournalEntry"/>
+        </VBox>
+
+
+    </StackPane>
+
+
+
+</HBox>

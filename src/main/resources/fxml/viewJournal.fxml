@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="root" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ViewJournalController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox fx:id="journalListBox" alignment="TOP_CENTER" VBox.vgrow="ALWAYS" spacing="15">
+        <VBox alignment="CENTER">
+            <Label fx:id="unfilteredThoughtsTitle" text="Unfiltered Thoughts Home" onMouseClicked="#goToHomeScreen"/>
+            <ListView fx:id="journalEntryList" onMouseClicked="#viewJournalEntry" />
+        </VBox>
+        <StackPane fx:id="setting">
+            <VBox fx:id="createJournalBox" spacing="50" alignment="CENTER" VBox.vgrow="ALWAYS">
+                <VBox fx:id="journalStatsBox" alignment="TOP_CENTER" spacing="20">
+                    <VBox fx:id="entryNumBox" alignment="CENTER">
+                        <Label fx:id="entryNumTitle" text="Number of Entries"/>
+                        <Label fx:id="entryNum" text="0"/>
+                    </VBox>
+                    <VBox fx:id="loginStreakBox" alignment="CENTER">
+                        <Label fx:id="loginStreakTitle" text="Login Streak"/>
+                        <Label fx:id="loginStreakNum" text="0"/>
+                    </VBox>
+                </VBox>
+                <Button fx:id="accountSettingButton" text="Account Setting" onAction="#goToAccountSettings"/>
+            </VBox>
+        </StackPane>
+    </VBox>
+    <StackPane fx:id="createBox" HBox.hgrow="ALWAYS">
+        <VBox fx:id="JournalBox" spacing="15" alignment="TOP_CENTER">
+            <Label fx:id="Date" text="Date: "/>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Region/>
+                <Label fx:id="entryIdNum" text="Journal Entry: "/>
+            </HBox>
+            <TextArea fx:id="journalContent" text="" VBox.vgrow="ALWAYS"/>
+            <HBox fx:id="buttonBox" alignment="TOP_CENTER" spacing="10">
+                <Button fx:id="confirmButton" text="Confirm" onAction="#confirmEntryContent"/>
+                <Button fx:id="editButton" text="Edit" onAction="#editEntryContent"/>
+                <Button fx:id="deleteButton" text="Delete" onAction="#deleteEntryContent"/>
+            </HBox>
+            <Region/>
+        </VBox>
+    </StackPane>
+
+
+</HBox>

@@ -1,0 +1,20 @@
+#root{
+    width:100%;
+    -fx-background-color: #e0d2c7;
+}
+
+#accountSettingTitle{
+    -fx-font-size: 35px;
+}
+
+#usernameTitle,
+#newPassTitle,
+#repeatNewPassTitle{
+    -fx-font-size: 20px;
+}
+
+
+Button,
+TextField{
+    -fx-font-size: 20px;
+}

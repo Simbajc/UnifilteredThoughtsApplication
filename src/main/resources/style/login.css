@@ -1,0 +1,20 @@
+#root{
+    width:100%;
+    -fx-background-color: #e0d2c7;
+}
+
+#loginTitile{
+    -fx-font-size: 50px;
+    /*-fx-font-style: ;*/
+}
+
+#usernameLabel,
+#passwordLabel{
+    -fx-font-size: 20px;
+}
+
+
+Button,
+TextField{
+    -fx-font-size: 20px;
+}

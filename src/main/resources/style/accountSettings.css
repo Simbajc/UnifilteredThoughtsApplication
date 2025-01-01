@@ -1,0 +1,14 @@
+#settingsTitle{
+    -fx-font-size: 20px;
+}
+
+Button,
+TextField{
+    -fx-font-size: 20px;
+}
+
+#usernameTitle,
+#passwordTitle,
+#repeatPassword{
+    -fx-font-size: 20px;
+}

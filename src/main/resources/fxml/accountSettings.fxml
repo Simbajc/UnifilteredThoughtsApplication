@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="AccountSettingsController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox alignment="CENTER">
+        <Label fx:id="settingsTitle" text="Account Settings"/>
+    </VBox>
+    <StackPane VBox.vgrow="ALWAYS">
+        <VBox alignment="CENTER" spacing="10">
+            <VBox fx:id="updateBox" alignment="CENTER" >
+                <VBox fx:id="titleBox" alignment="TOP_CENTER" spacing="10">
+                    <Label fx:id="usernameTitle" text="Username"/>
+                    <TextField fx:id="txtFieldUsername" maxWidth="150"/>
+                    <Button fx:id="updateUsernameButton" text="Update Username" onAction="#updateUsernameConfig"/>
+                </VBox>
+                <VBox fx:id="textFieldBox" alignment="TOP_CENTER" spacing="10">
+                    <Label fx:id="passwordTitle" text="Password"/>
+                    <TextField fx:id="txtFieldPassword" maxWidth="150"/>
+                    <Button fx:id="updatePasswordButton" text="Update Password" onAction="#updatePasswordConfig"/>
+                </VBox>
+                <VBox fx:id="updateButtons" alignment="TOP_CENTER" spacing="10">
+                    <Label fx:id="repeatPassword" text="Repeat Password"/>
+                    <TextField fx:id="txtFieldRePassword" maxWidth="150"/>
+                </VBox>
+            </VBox>
+            <HBox fx:id="accountModifyButtonBox" alignment="CENTER" spacing="10">
+                <Button fx:id="confirmButton" text="Confirm" onAction="#confirm"/>
+                <Button fx:id="deleteAccountButton" text="Delete" onAction="#deleteAccountConfig"/>
+                <Button fx:id="resetButton" text="Reset" onAction="#reset"/>
+            </HBox>
+        </VBox>
+    </StackPane>
+    <Button fx:id="backButton" text="Back" alignment="BASELINE_LEFT" onAction="#back"/>
+
+
+</VBox>

@@ -1,0 +1,64 @@
+#journalContent {
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+#root{
+    -fx-background-color: #e0d2c7;
+    -fx-pref-width: 1500;
+    /*height: 100%;*/
+}
+
+#journalListBox{
+    -fx-background-color: #b8ada5;
+}
+
+#entryNumTitle{
+    -fx-font-size: 25px;
+}
+#entryNum{
+    -fx-font-size: 20px;
+}
+#loginStreakTitle{
+    -fx-font-size: 25px;
+}
+#loginStreakNum{
+    -fx-font-size: 20px;
+}
+
+#accountSettingButton{
+    -fx-font-size: 20px;
+}
+
+#confirmButton,
+#editButton,
+#deleteButton{
+    -fx-font-size: 20px;
+}
+
+#Date{
+    -fx-font-size: 35px;
+}
+
+#entryIdNum{
+    -fx-font-size: 20px;
+}
+
+#journalContent{
+    -fx-min-height: 75%;
+}
+
+Button,
+ListView,
+TextArea{
+    -fx-font-size: 20px;
+}
+
+ListView{
+    -fx-font-size: 13px;
+}
+
+#unfilteredThoughtsTitle{
+    -fx-font-size: 15px;
+}
